@@ -8,7 +8,7 @@ class Event_guidelines extends CI_Controller {
 		$args['active_page'] = 'event_guidelines';
 		$this->load->view('head',$args);
 		$this->load->view('menu');
-		$this->load->view('Event_guidelines');
+		$this->load->view('event_guidelines');
 		$this->load->view('foot');
 	}
 
