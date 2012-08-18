@@ -16,13 +16,13 @@ class Curriculum extends CI_Controller {
 		$this->load->helper('file');
 		$this->load->helper('download');
 
-		if (read_file('/files/curriculum_guidlines/'.$file_name)) {
-			$file = 'files/curriculum_guidlines/'.$file_name;
+
+		if (read_file('files/curriculum_guidelines/'.$file_name)) {
+			$file = 'files/curriculum_guidelines/'.$file_name;
 			$data = file_get_contents($file); // Read the file's contents
 			force_download($file_name, $data);
-			echo 'hell';
 		}else{
-			echo 'no';
+			$this->load->view('err.php');
 		}
 	}
 }

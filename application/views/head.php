@@ -4,7 +4,13 @@
 		<title><?php echo $title; ?></title>
 		<link rel="stylesheet" type="text/css" href="css/grid.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script type="text/javascript" src=''></script>
+		<?php
+			if (isset($scripts)) {
+				foreach ($scripts as $script) {
+					echo $script;
+				}
+			}
+		?>
 	</head>
 	<body>
 	<div class='row'>
