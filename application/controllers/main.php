@@ -4,6 +4,7 @@ class Main extends CI_Controller {
 
 	public function index()
 	{
+		$args['active_page'] = 'home';
 		$args['title'] = 'Welcome to One Million Bones Ky';
 		$this->load->view('head',$args);
 		$this->load->view('menu');

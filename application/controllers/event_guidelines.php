@@ -5,6 +5,7 @@ class Event_guidelines extends CI_Controller {
 	public function index()
 	{
 		$args['title'] = 'Event guidelines for One Million Bones Ky';
+		$args['active_page'] = 'event_guidelines';
 		$this->load->view('head',$args);
 		$this->load->view('menu');
 		$this->load->view('Event_guidelines');

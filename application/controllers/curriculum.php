@@ -5,6 +5,7 @@ class Curriculum extends CI_Controller {
 	public function index()
 	{
 		$args['title'] = 'Curriculum resources for One Million Bones Ky';
+		$args['active_page'] = 'curriculum';
 		$this->load->view('head',$args);
 		$this->load->view('menu');
 		$this->load->view('curriculum');

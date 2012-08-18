@@ -1,6 +1,23 @@
 body {
 	font-family: 'Lucida Sans Unicode', 'Bitstream Vera Sans', 'Trebuchet Unicode MS', 'Lucida Grande', Verdana, Helvetica, sans-serif;
+	color: dimgray;
 }
+h1, h2, h3, h4, h5, h6 {
+	color: black;
+}
+a:link {
+	font-family: 'Lucida Sans Unicode', 'Bitstream Vera Sans', 'Trebuchet Unicode MS', 'Lucida Grande', Verdana, Helvetica, sans-serif;
+	color: black;
+	text-decoration: none;
+	}      /* unvisited link */
+a:visited {
+	font-family: 'Lucida Sans Unicode', 'Bitstream Vera Sans', 'Trebuchet Unicode MS', 'Lucida Grande', Verdana, Helvetica, sans-serif;
+	color: darkgray;
+	}  /* visited link */
+a:hover {
+	color: brown;
+	}  /* mouse over link */
+
 img.logo {
 	display: block;
     margin-left: auto;
@@ -53,7 +70,7 @@ div.cssmenu{
 	padding:0px;
 }
 .cssmenu li a{
-	background:#333333 url('img/seperator.gif') bottom right no-repeat;
+	background:#333333 url('../img/seperator.gif') bottom right no-repeat;
 	color:#cccccc;
 	display:block;
 	font-weight:normal;
@@ -64,7 +81,7 @@ div.cssmenu{
 	text-decoration:none;
 }
 .cssmenu li a:hover, .cssmenu ul li:hover a{
-	background: #2580a2 url('img/hover.gif') bottom center no-repeat;
+	background: #2580a2 url('../img/hover.gif') bottom center no-repeat;
 	color:#FFFFFF;
 	text-decoration:none;
 }
@@ -86,7 +103,7 @@ div.cssmenu{
 	
 }
 .cssmenu li li {
-	background:url('img/sub_sep.gif') bottom left no-repeat;
+	background:url('../img/sub_sep.gif') bottom left no-repeat;
 	display:block;
 	float:none;
 	margin:0px;
@@ -106,8 +123,20 @@ div.cssmenu{
 	padding:0px 10px 0px 15px;
 	text-align:left;
 }
+
+li.active a{
+	display:block;
+	height:35px;
+	font-weight:normal;
+	line-height:35px;
+	margin:0px;
+	padding:0px 10px 0px 15px;
+	text-align:left;
+	background: #2580a2;
+}
+
 .cssmenu li ul a:hover, .cssmenu li ul li:hover a{
-	background:#2580a2 url('img/hover_sub.gif') center left no-repeat;
+	background:#2580a2 url('../img/hover_sub.gif') center left no-repeat;
 	border:0px;
 	color:#ffffff;
 	text-decoration:none;
