@@ -7,7 +7,7 @@
 	}
 </style>
 <div class='content row'>
-	<div class='column grid_6'>
+	<div class='column grid_8'>
 		<h3>Videos and Short Films</h3>
 		<p>
 			<ul>

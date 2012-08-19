@@ -14,17 +14,18 @@
 		?>
 		<script type="text/javascript">
 			$(document).ready(function(){
+				<?php 
+					$active_page;
+				?>
 				var $activepage = "<?php if (isset($active_page)) { echo $active_page; }else{ echo '';} ?>";
 				$("li#"+$activepage+"").prop('class', 'active');
 			});
 		</script>
 	</head>
 	<body>
-		<?php 
-		 $active_page;
-		?>
-	<div class='row'>
-		<div class='logo column grid_12'>
-			<img class='logo' src="img/logo.png">
-		</div>
-	</div>
+		<div class='wrap'>
+			<div class='row'>
+				<div class='logo column grid_12'>
+					<img class='logo' src="img/logo.png">
+				</div>
+			</div>

@@ -1,3 +1,10 @@
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+
 body {
 	font-family: 'Lucida Sans Unicode', 'Bitstream Vera Sans', 'Trebuchet Unicode MS', 'Lucida Grande', Verdana, Helvetica, sans-serif;
 	color: dimgray;
@@ -27,20 +34,34 @@ img.logo {
 div.content {
 	padding-top: 15px;
 }
+/*sticky footer*/
+.wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -30px;
+}
+div.foot, .push{
+	height: 30px;
+}
+.foot p {
+	font-size: small;
+	color:lightgray;
+}
 
 /*img maxes*/
-.grid_1 img { max-width:70px; }
-.grid_2 img { max-width:170px; }
-.grid_3 img { max-width:270px; }
-.grid_4 img { max-width:370px; }
-.grid_5 img { max-width:470px; }
-.grid_6 img { max-width:570px; }
-.grid_7 img { max-width:670px; }
-.grid_8 img { max-width:770px; }
-.grid_9 img { max-width:870px; }
-.grid_10 img { max-width:970px; }
-.grid_11 img { max-width:1070px; }
-.grid_12 img { max-width:1170px; }
+.grid_1 img { max-width:50px; }
+.grid_2 img { max-width:130px; }
+.grid_3 img { max-width:210px; }
+.grid_4 img { max-width:290px; }
+.grid_5 img { max-width:370px; }
+.grid_6 img { max-width:460px; }
+.grid_7 img { max-width:530px; }
+.grid_8 img { max-width:610px; }
+.grid_9 img { max-width:690px; }
+.grid_10 img { max-width:770px; }
+.grid_11 img { max-width:850px; }
+.grid_12 img { max-width:920px; }
 /*img max end*/
 
 /*css menu*/
@@ -80,6 +101,18 @@ div.cssmenu{
 	text-align:center;
 	text-decoration:none;
 }
+
+li.active a{
+	display:block;
+	height:35px;
+	font-weight:normal;
+	line-height:35px;
+	margin:0px;
+	padding:0px 25px;
+	text-align:left;
+	background: #2580a2;
+}
+
 .cssmenu li a:hover, .cssmenu ul li:hover a{
 	background: #2580a2 url('../img/hover.gif') bottom center no-repeat;
 	color:#FFFFFF;
@@ -122,17 +155,6 @@ div.cssmenu{
 	margin:0px;
 	padding:0px 10px 0px 15px;
 	text-align:left;
-}
-
-li.active a{
-	display:block;
-	height:35px;
-	font-weight:normal;
-	line-height:35px;
-	margin:0px;
-	padding:0px 10px 0px 15px;
-	text-align:left;
-	background: #2580a2;
 }
 
 .cssmenu li ul a:hover, .cssmenu li ul li:hover a{
