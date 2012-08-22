@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<title><?php echo $title; ?></title>
-		<link rel="stylesheet" type="text/css" href="css/grid.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/css/grid.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/css/style.css">
+		<script type="text/javascript" src="<?php echo base_url(); ?>/js/jquery-1.8.0.min.js"></script>
 		<?php
 			if (isset($scripts)) {
 				foreach ($scripts as $script) {
@@ -26,6 +26,6 @@
 		<div class='wrap'>
 			<div class='row'>
 				<div class='logo column grid_12'>
-					<img class='logo' src="img/logo.png">
+					<img class='logo' src="<?php echo base_url(); ?>/img/logo.png">
 				</div>
 			</div>

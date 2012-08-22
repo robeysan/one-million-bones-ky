@@ -63,6 +63,11 @@
 	$('.darfur_rising').click(function(e){
 		e.preventDefault();
 		$('.darfur_rising_lb').show();
-		$('.lightbox').lightbox_me();
+		$('.lightbox').lightbox_me({
+			centered: true,
+			onClose: function(){
+				$('.darfur_rising_lb').hide();
+			}
+		});
 	});
 </script>

@@ -30,9 +30,18 @@ img.logo {
     margin-left: auto;
     margin-right: auto;
 }
+.center {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 div.content {
 	padding-top: 15px;
+}
+
+div.content p {
+	padding: 10px 0;
 }
 /*sticky footer*/
 .wrap {
